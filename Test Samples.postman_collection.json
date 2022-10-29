@@ -1,0 +1,2862 @@
+{
+	"info": {
+		"_postman_id": "3ddcf54e-0313-4aa2-b6c8-5af2b869504b",
+		"name": "Test Samples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24000634"
+	},
+	"item": [
+		{
+			"name": "node app",
+			"item": [
+				{
+					"name": "User Sign Up",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWExYzAxMzQzYjQ2MGM2NGJiMTg3NCIsImlhdCI6MTY2Njg1MTA5OCwiZXhwIjoxNjY2ODU0Njk4fQ.dvDpv-t_QxBO2SeY0jX0asXRVVmYYc8WAs8Kv_xU1C4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"user3\",\r\n    \"email\": \"user3@gmail.com\",\r\n    \"password\": \"user3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Sign Up",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"user6\",\r\n    \"email\": \"user6@gmail.com\",\r\n    \"password\": \"user6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/user/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"signup"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "96"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"60-JwaiBCsQTFx0hXzgfYiuPp0PrXI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:13:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"sign up successful, kindly login to access more actions and Please check ur email.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user1@gmail.com\",\r\n    \"password\": \"user1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"user1@gmail.com\",\r\n    \"password\": \"user1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/user/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-OWbYDuLidvIpgYXe3F6L/+mVkRo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:13:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"You are logged in.\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU\",\n    \"userId\": \"635b86231f74a52fc75e3d06\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all Categories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all Categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "477"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1dd-9hVDBJ75ELAS2glk9ZB64M0ZX20\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:14:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Kindly find all categories below:\",\n    \"Categories\": [\n        {\n            \"_id\": \"635b88dab284ce74ad1e976f\",\n            \"title\": \"Sports1\",\n            \"description\": \"All sports related notes.\",\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635b8916b284ce74ad1e9771\",\n            \"title\": \"Summer1\",\n            \"description\": \"All summer related notes.\",\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635b924cf0872f928c198a8e\",\n            \"title\": \"Study1\",\n            \"description\": \"All study related notes.\",\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Studying1\",\r\n    \"description\": \"Please remember to study for your math exam.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Outdoor\",\r\n    \"description\": \"All Outdoor related notes.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "237"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ed-SWuey5gd/WgDub6hln6lRJs4QTI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:15:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category created successfully!, it does not have notes attached under it\",\n    \"Category\": {\n        \"title\": \"Outdoor\",\n        \"description\": \"All Outdoor related notes.\",\n        \"userId\": \"635b86231f74a52fc75e3d06\",\n        \"_id\": \"635cd30681e34f9e078ce99b\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"635b889db284ce74ad1e976d\",\r\n    \"title\": \"Update1\",\r\n    \"description\": \"does this work?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Category",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"635cd30681e34f9e078ce99b\",\r\n    \"title\": \"Indoor\",\r\n    \"description\": \"all indoor activites notes?\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/category/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-PBz3fLYqIE3prMVS0W+YJedNhkQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:16:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category Updated successfully!\",\n    \"Category\": {\n        \"_id\": \"635cd30681e34f9e078ce99b\",\n        \"title\": \"Indoor\",\n        \"description\": \"all indoor activites notes?\",\n        \"userId\": \"635b86231f74a52fc75e3d06\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"635b889db284ce74ad1e976d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Category",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"635cd30681e34f9e078ce99b\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/category/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c-nHQAz++iwQK0ZA1bgek1sEXTWAs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:16:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category Deleted successfully!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "All Notes Sorted by Update Date",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all Notes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1192"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a8-1BIM2SjQZ1Zhs/guOP7QTfasQrs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:41:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Your Notes:\",\n    \"Notes\": [\n        {\n            \"_id\": \"635cd7b00d68e46d932e55f6\",\n            \"title\": \"Note3\",\n            \"noteBody\": \"This was updated 3rd\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"Family\",\n                \"FamilyNight\",\n                \"Outdoor\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-29T07:35:12.356Z\",\n            \"updatedAt\": \"2022-10-29T07:41:11.334Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"635cd7aa0d68e46d932e55f4\",\n            \"title\": \"Note2\",\n            \"noteBody\": \"This was updated 2st\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"Family\",\n                \"FamilyNight\",\n                \"Outdoor\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-29T07:35:06.349Z\",\n            \"updatedAt\": \"2022-10-29T07:40:04.938Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"635cd7a30d68e46d932e55f2\",\n            \"title\": \"Note1\",\n            \"noteBody\": \"This was updated 1st\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"Family\",\n                \"FamilyNight\",\n                \"Outdoor\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-29T07:34:59.393Z\",\n            \"updatedAt\": \"2022-10-29T07:39:45.104Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"635b92a1f0872f928c198a91\",\n            \"title\": \"math\",\n            \"noteBody\": \"Study te first 5 chaps\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"University\",\n                \"UniLife\",\n                \"Success\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-28T08:28:17.301Z\",\n            \"updatedAt\": \"2022-10-28T08:28:17.301Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create a Note",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"physics\",\r\n    \"noteBody\": \"Study te first 3 chaps\",\r\n    \"categoryId\": \"635b924cf0872f928c198a8e\",\r\n    \"tags\": [\"Newton\", \"University\", \"Success\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create a Note",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Lets go outdoor\",\r\n    \"noteBody\": \"go out with ur friends tomorrow!!\",\r\n    \"categoryId\": \"635cd43f81e34f9e078ce9a2\",\r\n    \"tags\": [\"Friends\", \"outdoor\", \"Life\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "353"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"161-ZjOvbXzze9GGO3bdkxwwWAvLoro\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:20:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Note created successfully!\",\n    \"Note\": {\n        \"title\": \"Lets go outdoor\",\n        \"noteBody\": \"go out with ur friends tomorrow!!\",\n        \"categoryId\": \"635cd43f81e34f9e078ce9a2\",\n        \"tags\": [\n            \"Friends\",\n            \"outdoor\",\n            \"Life\"\n        ],\n        \"userId\": \"635b86231f74a52fc75e3d06\",\n        \"_id\": \"635cd44b81e34f9e078ce9a4\",\n        \"createdAt\": \"2022-10-29T07:20:43.284Z\",\n        \"updatedAt\": \"2022-10-29T07:20:43.284Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Note",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Note",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"635cd44b81e34f9e078ce9a4\",\r\n    \"title\": \"Outdoor\",\r\n    \"noteBody\": \"Go out with ur familly as well!\",\r\n    \"categoryId\": \"635b924cf0872f928c198a8e\",\r\n    \"tags\": [\"Family\", \"FamilyNight\", \"Outdoor\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "349"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15d-uY3ZqxxKz5KR9ZBPXCWfCRiB0IY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:22:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Note Updated successfully!\",\n    \"Note\": {\n        \"_id\": \"635cd44b81e34f9e078ce9a4\",\n        \"title\": \"Outdoor\",\n        \"noteBody\": \"Go out with ur familly as well!\",\n        \"categoryId\": \"635b924cf0872f928c198a8e\",\n        \"tags\": [\n            \"Family\",\n            \"FamilyNight\",\n            \"Outdoor\"\n        ],\n        \"userId\": \"635b86231f74a52fc75e3d06\",\n        \"createdAt\": \"2022-10-29T07:20:43.284Z\",\n        \"updatedAt\": \"2022-10-29T07:22:05.511Z\",\n        \"__v\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Note",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"635b92d7f0872f928c198a93\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Note",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"635cd44b81e34f9e078ce9a4\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-oAc9yEnb2KVkyFiGcVdjOfyQ2xM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:22:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Note Deleted successfully!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Filter by Category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Filter by Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/category/:catId",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										"category",
+										":catId"
+									],
+									"variable": [
+										{
+											"key": "catId",
+											"value": "635b924cf0872f928c198a8e"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "325"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"145-aCHPI6u73qVLG0ZN4D8guB9Hw58\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:23:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Your Notes:\",\n    \"Notes\": [\n        {\n            \"_id\": \"635b92a1f0872f928c198a91\",\n            \"title\": \"math\",\n            \"noteBody\": \"Study te first 5 chaps\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"University\",\n                \"UniLife\",\n                \"Success\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-28T08:28:17.301Z\",\n            \"updatedAt\": \"2022-10-28T08:28:17.301Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Search By Tags",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIyQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjM0MWY3NGE1MmZjNzVlM2QwOCIsImlhdCI6MTY2Njk0ODUwMSwiZXhwIjoxNjY2OTUyMTAxfQ.NVnvcHD3dW1iEPKKYjDb3OTNtn2glWKcuJPRFnTdQ2k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/tag/:key",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								"tag",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "Success"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search By Tags",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIyQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjM0MWY3NGE1MmZjNzVlM2QwOCIsImlhdCI6MTY2Njk0ODUwMSwiZXhwIjoxNjY2OTUyMTAxfQ.NVnvcHD3dW1iEPKKYjDb3OTNtn2glWKcuJPRFnTdQ2k",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/tag/:key",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										"tag",
+										":key"
+									],
+									"variable": [
+										{
+											"key": "key",
+											"value": "Success"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "617"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"269-GCDbp/J80VnY83y3tmP4lIqJyoU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:08:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Your Notes:\",\n    \"Notes\": [\n        {\n            \"_id\": \"635b92a1f0872f928c198a91\",\n            \"title\": \"math\",\n            \"noteBody\": \"Study te first 5 chaps\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"University\",\n                \"UniLife\",\n                \"Success\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-28T08:28:17.301Z\",\n            \"updatedAt\": \"2022-10-28T08:28:17.301Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635b9ee69f8f9147e7aae082\",\n            \"title\": \"physics\",\n            \"noteBody\": \"Study te first 3 chaps\",\n            \"categoryId\": \"635b9dee37c027d565113dfc\",\n            \"tags\": [\n                \"Newton\",\n                \"University\",\n                \"Success\"\n            ],\n            \"userId\": \"635b86341f74a52fc75e3d08\",\n            \"createdAt\": \"2022-10-28T09:20:38.325Z\",\n            \"updatedAt\": \"2022-10-28T09:20:38.325Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "node app Copy",
+			"item": [
+				{
+					"name": "User Sign Up",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWExYzAxMzQzYjQ2MGM2NGJiMTg3NCIsImlhdCI6MTY2Njg1MTA5OCwiZXhwIjoxNjY2ODU0Njk4fQ.dvDpv-t_QxBO2SeY0jX0asXRVVmYYc8WAs8Kv_xU1C4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"user3\",\r\n    \"email\": \"user3@gmail.com\",\r\n    \"password\": \"user3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Sign Up",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"user6\",\r\n    \"email\": \"user6@gmail.com\",\r\n    \"password\": \"user6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/user/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"signup"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "96"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"60-JwaiBCsQTFx0hXzgfYiuPp0PrXI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:13:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"sign up successful, kindly login to access more actions and Please check ur email.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user1@gmail.com\",\r\n    \"password\": \"user1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"user1@gmail.com\",\r\n    \"password\": \"user1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/user/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-OWbYDuLidvIpgYXe3F6L/+mVkRo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:13:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"You are logged in.\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU\",\n    \"userId\": \"635b86231f74a52fc75e3d06\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all Categories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all Categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "477"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1dd-9hVDBJ75ELAS2glk9ZB64M0ZX20\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:14:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Kindly find all categories below:\",\n    \"Categories\": [\n        {\n            \"_id\": \"635b88dab284ce74ad1e976f\",\n            \"title\": \"Sports1\",\n            \"description\": \"All sports related notes.\",\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635b8916b284ce74ad1e9771\",\n            \"title\": \"Summer1\",\n            \"description\": \"All summer related notes.\",\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635b924cf0872f928c198a8e\",\n            \"title\": \"Study1\",\n            \"description\": \"All study related notes.\",\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Studying1\",\r\n    \"description\": \"Please remember to study for your math exam.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Outdoor\",\r\n    \"description\": \"All Outdoor related notes.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "237"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ed-SWuey5gd/WgDub6hln6lRJs4QTI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:15:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category created successfully!, it does not have notes attached under it\",\n    \"Category\": {\n        \"title\": \"Outdoor\",\n        \"description\": \"All Outdoor related notes.\",\n        \"userId\": \"635b86231f74a52fc75e3d06\",\n        \"_id\": \"635cd30681e34f9e078ce99b\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"635b889db284ce74ad1e976d\",\r\n    \"title\": \"Update1\",\r\n    \"description\": \"does this work?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Category",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"635cd30681e34f9e078ce99b\",\r\n    \"title\": \"Indoor\",\r\n    \"description\": \"all indoor activites notes?\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/category/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-PBz3fLYqIE3prMVS0W+YJedNhkQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:16:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category Updated successfully!\",\n    \"Category\": {\n        \"_id\": \"635cd30681e34f9e078ce99b\",\n        \"title\": \"Indoor\",\n        \"description\": \"all indoor activites notes?\",\n        \"userId\": \"635b86231f74a52fc75e3d06\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"635b889db284ce74ad1e976d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Category",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"635cd30681e34f9e078ce99b\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/category/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c-nHQAz++iwQK0ZA1bgek1sEXTWAs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:16:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category Deleted successfully!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "All Notes Sorted by Update Date",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all Notes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1192"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a8-1BIM2SjQZ1Zhs/guOP7QTfasQrs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:41:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Your Notes:\",\n    \"Notes\": [\n        {\n            \"_id\": \"635cd7b00d68e46d932e55f6\",\n            \"title\": \"Note3\",\n            \"noteBody\": \"This was updated 3rd\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"Family\",\n                \"FamilyNight\",\n                \"Outdoor\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-29T07:35:12.356Z\",\n            \"updatedAt\": \"2022-10-29T07:41:11.334Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"635cd7aa0d68e46d932e55f4\",\n            \"title\": \"Note2\",\n            \"noteBody\": \"This was updated 2st\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"Family\",\n                \"FamilyNight\",\n                \"Outdoor\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-29T07:35:06.349Z\",\n            \"updatedAt\": \"2022-10-29T07:40:04.938Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"635cd7a30d68e46d932e55f2\",\n            \"title\": \"Note1\",\n            \"noteBody\": \"This was updated 1st\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"Family\",\n                \"FamilyNight\",\n                \"Outdoor\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-29T07:34:59.393Z\",\n            \"updatedAt\": \"2022-10-29T07:39:45.104Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"635b92a1f0872f928c198a91\",\n            \"title\": \"math\",\n            \"noteBody\": \"Study te first 5 chaps\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"University\",\n                \"UniLife\",\n                \"Success\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-28T08:28:17.301Z\",\n            \"updatedAt\": \"2022-10-28T08:28:17.301Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create a Note",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"physics\",\r\n    \"noteBody\": \"Study te first 3 chaps\",\r\n    \"categoryId\": \"635b924cf0872f928c198a8e\",\r\n    \"tags\": [\"Newton\", \"University\", \"Success\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create a Note",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Lets go outdoor\",\r\n    \"noteBody\": \"go out with ur friends tomorrow!!\",\r\n    \"categoryId\": \"635cd43f81e34f9e078ce9a2\",\r\n    \"tags\": [\"Friends\", \"outdoor\", \"Life\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "353"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"161-ZjOvbXzze9GGO3bdkxwwWAvLoro\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:20:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Note created successfully!\",\n    \"Note\": {\n        \"title\": \"Lets go outdoor\",\n        \"noteBody\": \"go out with ur friends tomorrow!!\",\n        \"categoryId\": \"635cd43f81e34f9e078ce9a2\",\n        \"tags\": [\n            \"Friends\",\n            \"outdoor\",\n            \"Life\"\n        ],\n        \"userId\": \"635b86231f74a52fc75e3d06\",\n        \"_id\": \"635cd44b81e34f9e078ce9a4\",\n        \"createdAt\": \"2022-10-29T07:20:43.284Z\",\n        \"updatedAt\": \"2022-10-29T07:20:43.284Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Note",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Note",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"635cd44b81e34f9e078ce9a4\",\r\n    \"title\": \"Outdoor\",\r\n    \"noteBody\": \"Go out with ur familly as well!\",\r\n    \"categoryId\": \"635b924cf0872f928c198a8e\",\r\n    \"tags\": [\"Family\", \"FamilyNight\", \"Outdoor\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "349"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15d-uY3ZqxxKz5KR9ZBPXCWfCRiB0IY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:22:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Note Updated successfully!\",\n    \"Note\": {\n        \"_id\": \"635cd44b81e34f9e078ce9a4\",\n        \"title\": \"Outdoor\",\n        \"noteBody\": \"Go out with ur familly as well!\",\n        \"categoryId\": \"635b924cf0872f928c198a8e\",\n        \"tags\": [\n            \"Family\",\n            \"FamilyNight\",\n            \"Outdoor\"\n        ],\n        \"userId\": \"635b86231f74a52fc75e3d06\",\n        \"createdAt\": \"2022-10-29T07:20:43.284Z\",\n        \"updatedAt\": \"2022-10-29T07:22:05.511Z\",\n        \"__v\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Note",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"635b92d7f0872f928c198a93\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Note",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"635cd44b81e34f9e078ce9a4\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-oAc9yEnb2KVkyFiGcVdjOfyQ2xM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:22:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Note Deleted successfully!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Filter by Category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2Njk0MjU4NSwiZXhwIjoxNjY2OTQ2MTg1fQ.ZpBgBPbmZtYlBUMrRb-i0o8r1WRMBFBDSi4pKKFWGyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Filter by Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjIzMWY3NGE1MmZjNzVlM2QwNiIsImlhdCI6MTY2NzAyNzU5NywiZXhwIjoxNjY3MDMxMTk3fQ.ROrZrM_8eyb3uwKlZEqh5zD9d9lFE6SzyKylCweMUNU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/category/:catId",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										"category",
+										":catId"
+									],
+									"variable": [
+										{
+											"key": "catId",
+											"value": "635b924cf0872f928c198a8e"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "325"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"145-aCHPI6u73qVLG0ZN4D8guB9Hw58\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:23:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Your Notes:\",\n    \"Notes\": [\n        {\n            \"_id\": \"635b92a1f0872f928c198a91\",\n            \"title\": \"math\",\n            \"noteBody\": \"Study te first 5 chaps\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"University\",\n                \"UniLife\",\n                \"Success\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-28T08:28:17.301Z\",\n            \"updatedAt\": \"2022-10-28T08:28:17.301Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Search By Tags",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIyQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjM0MWY3NGE1MmZjNzVlM2QwOCIsImlhdCI6MTY2Njk0ODUwMSwiZXhwIjoxNjY2OTUyMTAxfQ.NVnvcHD3dW1iEPKKYjDb3OTNtn2glWKcuJPRFnTdQ2k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/note/tag/:key",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"note",
+								"tag",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "Success"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search By Tags",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIyQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzNWI4NjM0MWY3NGE1MmZjNzVlM2QwOCIsImlhdCI6MTY2Njk0ODUwMSwiZXhwIjoxNjY2OTUyMTAxfQ.NVnvcHD3dW1iEPKKYjDb3OTNtn2glWKcuJPRFnTdQ2k",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/note/tag/:key",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"note",
+										"tag",
+										":key"
+									],
+									"variable": [
+										{
+											"key": "key",
+											"value": "Success"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "617"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"269-GCDbp/J80VnY83y3tmP4lIqJyoU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 07:08:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Your Notes:\",\n    \"Notes\": [\n        {\n            \"_id\": \"635b92a1f0872f928c198a91\",\n            \"title\": \"math\",\n            \"noteBody\": \"Study te first 5 chaps\",\n            \"categoryId\": \"635b924cf0872f928c198a8e\",\n            \"tags\": [\n                \"University\",\n                \"UniLife\",\n                \"Success\"\n            ],\n            \"userId\": \"635b86231f74a52fc75e3d06\",\n            \"createdAt\": \"2022-10-28T08:28:17.301Z\",\n            \"updatedAt\": \"2022-10-28T08:28:17.301Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"635b9ee69f8f9147e7aae082\",\n            \"title\": \"physics\",\n            \"noteBody\": \"Study te first 3 chaps\",\n            \"categoryId\": \"635b9dee37c027d565113dfc\",\n            \"tags\": [\n                \"Newton\",\n                \"University\",\n                \"Success\"\n            ],\n            \"userId\": \"635b86341f74a52fc75e3d08\",\n            \"createdAt\": \"2022-10-28T09:20:38.325Z\",\n            \"updatedAt\": \"2022-10-28T09:20:38.325Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
